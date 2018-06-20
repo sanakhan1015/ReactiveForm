@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-
-
-@NgModule({
+import { DetailComponent } from './detail/detail.component';
+import { ReactiveFormsModule} from  '@angular/forms';
+@NgModule({ 
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
